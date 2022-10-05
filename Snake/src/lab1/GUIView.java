@@ -22,7 +22,7 @@ public class GUIView extends JPanel {
 	private static final long serialVersionUID = -3394100357075618465L;
 
 	/** The "Start Game" button */
-	private final JButton startGameButton;
+	private final JButton LetsPlay;
 
 	/** The chooser (also called drop-down menu) with names of different games */
 	private final JComboBox<Object> gameChooser;
@@ -68,9 +68,9 @@ public class GUIView extends JPanel {
 
 		// Create a new button on that panel and add a StartGameListener as
 		// listener on that button
-		this.startGameButton = new JButton("Start Game");
-		this.startGameButton.addActionListener(new StartGameListener());
-		this.guiPanel.add(this.startGameButton);
+		this.LetsPlay = new JButton("Start Game");
+		this.LetsPlay.addActionListener(new StartGameListener());
+		this.guiPanel.add(this.LetsPlay);
 
 		// Create a new choice on the panel, and add all available games
 		this.gameChooser = new JComboBox<Object>(this.gameFactory.getGameNames());
@@ -99,7 +99,7 @@ public class GUIView extends JPanel {
 		public void actionPerformed(final ActionEvent e) {
 			Object source = e.getSource();
 
-			if (source == GUIView.this.startGameButton) {
+			if (source == GUIView.this.LetsPlay) {
 				// Get the name of the game selected in the Choice
 				String gameName =
 						GUIView.this.gameChooser.getSelectedItem().toString();
