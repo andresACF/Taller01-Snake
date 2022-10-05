@@ -1,4 +1,4 @@
-package lab1;
+	package lab1;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -52,10 +52,10 @@ public class SnakeModel extends GameModel {
 	private static final GameTile FRUIT_TILE = new RoundTile(new Color(180, 0, 0), Color.RED, 3.0);
 
 	/** Graphical representation of the snake */
-	private static final GameTile SNAKE_TILE = new RectangularTile(Color.darkGray);
+	private static final GameTile SNAKE_TILE = new RectangularTile(new Color(81, 58, 52));
 
 	/** Graphical representation of the snake's head */
-	private static final GameTile SNAKE_HEAD_TILE = new RectangularTile(Color.GRAY);
+	private static final GameTile SNAKE_HEAD_TILE = new RectangularTile(new Color(182, 129, 115));
 	
 	/** Graphical representation of a blank tile. */
 	private static final GameTile BLANK_TILE = new GameTile();
