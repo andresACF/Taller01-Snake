@@ -79,6 +79,8 @@ public class GUIView extends JPanel {
 		// Add both the new panel and the GameView to myself
 		add(this.gameView, BorderLayout.CENTER);
 		add(this.guiPanel, BorderLayout.SOUTH);
+
+		//
 	}
 
 	/**
